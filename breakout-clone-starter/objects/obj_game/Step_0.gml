@@ -13,7 +13,7 @@ if (instance_number(obj_brick) == 0) {
 if (instance_exists(obj_ball) && obj_ball.y > room_height + 40) {
     // Player loses a life.
     audio_play_sound(sfx_lose_life, 1, false);
-    lives_left -= 1;
+    lives_left -= 3;
     instance_destroy(obj_ball); // Destroy the ball.
 
     // Check if the game is over.
